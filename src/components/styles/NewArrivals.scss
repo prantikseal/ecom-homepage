@@ -6,6 +6,11 @@
         img {
             margin: 1rem auto;
             border-radius: 0.5rem;
+            height: 300px;
+            width: 200px;
+            object-fit: cover;
+            object-position: center;
+
         }
     }
     :hover {

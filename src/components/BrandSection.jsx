@@ -4,43 +4,59 @@ const BrandSection = () => {
   const Brands = [
     {
       id: 0,
-      category: "Brand",
-      image: "https://picsum.photos/300/400",
+      name: "Woman in Red Coat",
+      price: 100,
+      image: "brand-img-1.jpg",
+      offer: true,
     },
     {
       id: 1,
-      category: "Brand",
-      image: "https://picsum.photos/300/400",
+      name: "Woman in Red Coat",
+      price: 200,
+      image: "brand-img-2.webp",
+      offer: false,
     },
     {
       id: 2,
-      category: "Brand",
-      image: "https://picsum.photos/300/400",
+      name: "Woman in Red Coat",
+      price: 300,
+      image: "brand-img-3.jpg",
+      offer: true,
     },
     {
       id: 3,
-      category: "Brand",
-      image: "https://picsum.photos/300/400",
+      name: "Woman in Red Coat",
+      price: 400,
+      image: "brand-img-4.jpg",
+      offer: false,
     },
     {
       id: 4,
-      category: "Brand",
-      image: "https://picsum.photos/300/400",
+      name: "Woman in Red Coat",
+      price: 500,
+      image: "brand-img-5.png",
+      offer: true,
     },
     {
       id: 5,
-      category: "Brand",
-      image: "https://picsum.photos/300/400",
+      name: "Woman in Red Coat",
+      price: 600,
+      image: "brand-img-6.png",
+      offer: false,
     },
     {
       id: 6,
-      category: "Brand",
-      image: "https://picsum.photos/300/400",
+      name: "Woman in Red Coat",
+      price: 700,
+      image: "brand-img-7.jpg",
+      offer: true,
     },
     {
       id: 7,
-      category: "Brand",
-      image: "https://picsum.photos/300/400",
+      name: "Woman in Red Coat",
+      price: 800,
+      image: "brand-img-8.jpg",
+      offer: false,
     },
   ];
   return (
@@ -53,7 +69,7 @@ const BrandSection = () => {
           Brands.map((brand) => (
             <div className="brand-card mx-0 relative" key={brand.id} href="#">
               <img src={brand.image} alt="brand" className=" opacity-60 " />
-              <div className="brand-card-content absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center z-10">
+              <div className="brand-card-content absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center hover:z-10">
                 <h1 className="brand-card-header font-semibold">{brand.category}</h1>
               </div>
             </div>

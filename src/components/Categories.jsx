@@ -5,17 +5,17 @@ const Categories = () => {
     {
       id: 0,
       category: "Men",
-      image: "https://picsum.photos/300/400",
+      image: "brand-img-2.webp",
     },
     {
       id: 1,
       category: "Women",
-      image: "https://picsum.photos/300/400",
+      image: "Women.webp",
     },
     {
       id: 2,
       category: "Kids",
-      image: "https://picsum.photos/300/400",
+      image: "Boy.jpg",
     },
   ];
   return (

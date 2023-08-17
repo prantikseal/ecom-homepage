@@ -5,6 +5,9 @@
   
   .category-card img {
     display: block; 
+    width: 300px;
+    height:400px;
+    object-fit: cover;
   }
   
   /* Card content */
@@ -45,6 +48,13 @@
         }
     }
   }
+
+  .category-card:hover {
+    img{
+        filter: brightness(0.5);
+    }
+  }
+
   
   /* Hover styles */
   .category-card:hover .category-card-header {
@@ -54,3 +64,4 @@
   .category-card:hover .category-card-cta {
     opacity: 1;
   }
+

@@ -113,7 +113,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="footer-bottom mx-auto max-w-6xl px-2 sm:px-6 lg:px-8 mt-10 flex justify-between">
+      <div className="footer-bottom mx-auto max-w-6xl px-2 sm:px-6 lg:px-8 mt-10 flex justify-between flex-col lg:flex-row">
         <div className="right">© 2023, All Rights Reserved by Brand</div>
         <div className="left flex justify-center items-center">
           Payment Options :

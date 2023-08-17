@@ -5,6 +5,8 @@ Tech Stack Used
 - ViteJS
 - TailwindCSS
 - React Slick
+- SCSS
+
 
 To Run the codebase
 1. `npm i`

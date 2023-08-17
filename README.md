@@ -16,5 +16,4 @@ To Build the codebase
 `npm run build`
 
 ### Live Preview
-[![SgSJS.gif](https://s11.gifyu.com/images/SgSJS.gif)](https://gifyu.com/image/SgSJS)
-<img src="https://s11.gifyu.com/images/SgSJS.gif" alt="live preview">
+![screencapture-localhost-5173-2023-08-17-22_28_46](https://github.com/prantikseal/ecom-homepage/assets/83081442/aa1b63ce-6255-490c-82f7-2744ce8b6de4)

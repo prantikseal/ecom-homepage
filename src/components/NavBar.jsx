@@ -1,8 +1,13 @@
-
+import React, { useState } from "react";
 
 function Navbar() {
+  const [search, setSearch] = useState("");
+  const searchBar = () => {
+    setSearch(search);
+  }
+
   return (
-    <nav className="bg-transparent ">
+    <nav className="bg-transparent transition duration-500 ease-in-out ">
       <div className="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           
@@ -69,21 +74,25 @@ function Navbar() {
           <div className="absolute right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             
 
-            <button className="text-black-300 px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="icon icon-tabler hover:stroke-white icon-tabler-search"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                stroke="#000000"
-                stroke-width="2"
-                fill="none"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                <path d="M21 21l-6 -6" />
-              </svg>
+            <button className="text-black-300 px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer" onClick={() => {
+              setSearch(!search);
+            }}>
+              {
+                search ? (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler hover:stroke-white icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke="#000000" stroke-width="2" fill="none">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                  </svg>
+                ) : (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler hover:stroke-white icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke="#000000" stroke-width="2" fill="none">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+                  </svg>
+                )
+
+              }
             </button>
 
             <button className="text-black-300 px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer">
@@ -122,8 +131,26 @@ function Navbar() {
               </svg>
             </button>
           </div>
+          
         </div>
       </div>
+      {
+              search ? (
+                <div className="flex flex-col items-center justify-center">
+                  <input type="text" placeholder="Search" className="border-2 border-gray-300 rounded-md px-2 py-1 w-1/2" />
+                  <button className="text-black-300 px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer" onClick={() => { setSearch(!search) }
+                  }>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler hover:stroke-white icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke="#000000" stroke-width="2" fill="none">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <line x1="18" y1="6" x2="6" y2="18" />
+                      <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                  </button>
+                </div>
+              ) : (
+                <div></div>
+              )
+      }
     </nav>
   );
 }

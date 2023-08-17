@@ -15,5 +15,6 @@ To Run the codebase
 To Build the codebase
 `npm run build`
 
-###Live Preview
+### Live Preview
 [![SgSJS.gif](https://s11.gifyu.com/images/SgSJS.gif)](https://gifyu.com/image/SgSJS)
+<img src="https://s11.gifyu.com/images/SgSJS.gif" alt="live preview">
